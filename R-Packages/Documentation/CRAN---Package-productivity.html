@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <base href="https://cran.r-project.org/web/packages/productivity/index.html">
+    <script>
+    </script> 
+    <title>CRAN - Package productivity</title> 
+    <style data-savepage-href="../../CRAN_web.css" type="text/css">
+      body {
+          background: white;
+          color: black;
+       }
+      
+      h1 {
+          background: white;
+          color: rgb(55%, 55%, 55%);
+          font-family: monospace;
+          font-size: x-large;
+          text-align: center;
+      }
+      
+      h2 {
+          background: white;
+          color: rgb(40%, 40%, 40%);
+          font-family: monospace;
+          font-size: large;
+      }
+      
+      h3, h4, h5 {
+          background: white;
+          color: rgb(40%, 40%, 40%);
+          font-family: monospace;
+      }
+      
+      a {
+          background: white;
+          color: blue;
+      }
+      
+      em.navigation {
+          font-weight: bold;
+          font-style: normal;
+          background: white;
+          color: rgb(40%, 40%, 40%);
+          font-family: monospace;
+      }
+      
+      img.toplogo {
+          vertical-align: middle;
+      }
+      
+      span.check_ok {
+          color: black;
+      }
+      
+      span.check_ko {
+          color: red;
+      }
+      
+      span.BioC {
+          color: #2C92A1;
+      }
+      
+      span.Ohat {
+          color: #8A4513;
+      }
+      
+      span.Gcode {
+          color: #5B8A00;
+      }
+      
+      span.Rforge {
+          color: #8009AA;
+      }
+      
+      span.GitHub {
+          color: #9F7BE1;
+      }
+      
+      span.acronym {
+          font-size: small;
+      }
+      
+      span.env {
+          font-family: monospace;
+      }
+      
+      span.file {
+          font-family: monospace;
+      }
+      
+      span.option {
+          font-family: monospace;
+      }
+      
+      span.pkg {
+          font-weight: bold;
+      }
+      
+      span.samp {
+          font-family: monospace;
+      }
+    </style> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <meta name="citation_title" content="Indices of Productivity Using Data Envelopment Analysis (DEA) [R package productivity version 1.1.0]"> 
+    <meta name="citation_author1" content="K Hervé Dakpo"> 
+    <meta name="citation_author2" content="Yann Desjeux"> 
+    <meta name="citation_author3" content="Laure Latruffe"> 
+    <meta name="citation_publication_date.Published" content="2018-03-28"> 
+    <meta name="citation_public_url" content="https://CRAN.R-project.org/package=productivity"> 
+    <meta name="DC.identifier" content="https://CRAN.R-project.org/package=productivity"> 
+    <meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)"> 
+    <style type="text/css">
+      table td { vertical-align: top; }
+    </style> 
+    <link rel="icon" href="data:image/vnd.microsoft.icon;base64,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AA/4AAAf/gAAf//AA////D//////////////////">
+    <style id="savepage-cssvariables">
+      :root {
+      }
+    </style>
+    <script id="savepage-shadowloader" type="application/javascript">
+      "use strict"
+      window.addEventListener("DOMContentLoaded",
+      function(event)
+      {
+        savepage_ShadowLoader(7);
+      },false);
+      function savepage_ShadowLoader(c){createShadowDOMs(0,document.documentElement);function createShadowDOMs(a,b){var i;if(b.localName=="iframe"||b.localName=="frame"){if(a<c){try{if(b.contentDocument.documentElement!=null){createShadowDOMs(a+1,b.contentDocument.documentElement)}}catch(e){}}}else{if(b.children.length>=1&&b.children[0].localName=="template"&&b.children[0].hasAttribute("data-savepage-shadowroot")){b.attachShadow({mode:"open"}).appendChild(b.children[0].content);b.removeChild(b.children[0]);for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)createShadowDOMs(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)createShadowDOMs(a,b.children[i])}}}
+    </script>
+    <meta name="savepage-url" content="https://cran.r-project.org/web/packages/productivity/index.html">
+    <meta name="savepage-title" content="CRAN - Package productivity">
+    <meta name="savepage-from" content="https://cran.r-project.org/web/packages/productivity/index.html">
+    <meta name="savepage-date" content="Sun Sep 22 2019 01:21:53 GMT+0800 (Singapore Standard Time)">
+    <meta name="savepage-state" content="Standard Items; Retained cross-origin frames; Removed unsaved URLs; Allowed passive mixed content; Sent referer headers with origin and path; Max frame depth = 7; Max resource size = 5MB; Max resource time = 17s;">
+    <meta name="savepage-version" content="16.1">
+    <meta name="savepage-comments" content="">
+  </head> 
+  <body> 
+    <h2>productivity: Indices of Productivity Using Data Envelopment Analysis (DEA)</h2> 
+    <p> Levels and changes of productivity and profitability are measured with various indices. The package contains the multiplicatively complete Färe-Primont, Fisher, Hicks-Moorsteen, Laspeyres, Lowe, and Paasche indices, as well as the classic Malmquist productivity index. Färe-Primont and Lowe indices verify the transitivity property and can therefore be used for multilateral or multitemporal comparison. Fisher, Hicks-Moorsteen, Laspeyres, Malmquist, and Paasche indices are not transitive and are only to be used for binary comparison. All indices can also be decomposed into different components, providing insightful information on the sources of productivity and profitability changes. In the use of Malmquist productivity index, the technological change index can be further decomposed into bias technological change components. The package also allows to prohibit technological regression (negative technological change). In the case of the Fisher, Hicks-Moorsteen, Laspeyres, Paasche and the transitive Färe-Primont and Lowe indices, it is furthermore possible to rule out technological change. Deflated shadow prices can also be obtained. Besides, the package allows parallel computing as an option, depending on the user's computer configuration. All computations are carried out with the nonparametric Data Envelopment Analysis (DEA), and several assumptions regarding returns to scale are available. All DEA linear programs are implemented using 'lp_solve'.</p> 
+    <table summary="Package productivity summary"> 
+      <tbody>
+        <tr> 
+          <td>Version:</td> 
+          <td>1.1.0</td> 
+        </tr> 
+        <tr> 
+          <td>Depends:</td> 
+          <td>R (≥ 2.15.3)</td> 
+        </tr> 
+        <tr> 
+          <td>Imports:</td> 
+          <td><a href="../lpSolveAPI/index.html">lpSolveAPI</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../foreach/index.html">foreach</a>, <a href="../iterators/index.html">iterators</a>, methods
+          </td> 
+        </tr> 
+        <tr> 
+          <td>Published:</td> 
+          <td>2018-03-28</td> 
+        </tr> 
+        <tr> 
+          <td>Author:</td> 
+          <td>K Hervé Dakpo [aut], Yann Desjeux [aut, cre], Laure Latruffe [aut]</td> 
+        </tr> 
+        <tr> 
+          <td>Maintainer:</td> 
+          <td>Yann Desjeux &lt;yann.desjeux at inra.fr&gt;</td> 
+        </tr> 
+        <tr> 
+          <td>BugReports:</td> 
+          <td><a href="https://r-forge.r-project.org/tracker/?group_id=2245">https://r-forge.r-project.org/tracker/?group_id=2245</a>
+          </td> 
+        </tr> 
+        <tr> 
+          <td>License:</td> 
+          <td><a href="../../licenses/GPL-3">GPL-3</a>
+          </td> 
+        </tr> 
+        <tr> 
+          <td>NeedsCompilation:</td> 
+          <td>no</td> 
+        </tr> 
+        <tr> 
+          <td>Citation:</td> 
+          <td><a href="citation.html">productivity citation info</a> 
+          </td> 
+        </tr> 
+        <tr> 
+          <td>Materials:</td> 
+          <td><a href="news.html">NEWS</a> 
+          </td> 
+        </tr> 
+        <tr> 
+          <td>CRAN checks:</td> 
+          <td><a href="../../checks/check_results_productivity.html">productivity results</a>
+          </td> 
+        </tr> 
+      </tbody>
+    </table> 
+    <h4>Downloads:</h4> 
+    <table summary="Package productivity downloads"> 
+      <tbody>
+        <tr> 
+          <td> Reference manual: </td> 
+          <td> <a href="productivity.pdf"> productivity.pdf </a> 
+          </td> 
+        </tr> 
+        <tr> 
+          <td> Package source: </td> 
+          <td> <a href="../../../src/contrib/productivity_1.1.0.tar.gz"> productivity_1.1.0.tar.gz </a> 
+          </td> 
+        </tr> 
+        <tr> 
+          <td> Windows binaries: </td> 
+          <td> r-devel: <a href="../../../bin/windows/contrib/3.7/productivity_1.1.0.zip">productivity_1.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/3.6/productivity_1.1.0.zip">productivity_1.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.5/productivity_1.1.0.zip">productivity_1.1.0.zip</a> 
+          </td> 
+        </tr> 
+        <tr> 
+          <td> OS X binaries: </td> 
+          <td> r-release: <a href="../../../bin/macosx/el-capitan/contrib/3.6/productivity_1.1.0.tgz">productivity_1.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.5/productivity_1.1.0.tgz">productivity_1.1.0.tgz</a> 
+          </td> 
+        </tr> 
+        <tr> 
+          <td> Old sources: </td> 
+          <td> <a href="https://CRAN.R-project.org/src/contrib/Archive/productivity"> productivity archive </a> 
+          </td> 
+        </tr> 
+      </tbody>
+    </table> 
+    <h4>Linking:</h4> 
+    <p>Please use the canonical form <a href="https://CRAN.R-project.org/package=productivity"><samp>https://CRAN.R-project.org/package=productivity</samp></a> to link to this page.
+    </p> 
+  </body>
+</html>
